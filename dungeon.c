@@ -9,7 +9,11 @@
 #define MAX_STRING_SIZE 30
 struct Room 
 { 
-	    int key;
-	       int south, north,east,west;
-	          char content[SIZE_CONTENT]; 
+    int key;
+    int south, north,east,west;
+    char content[SIZE_CONTENT]; 
 };
+int main()
+{
+return 0;
+}
