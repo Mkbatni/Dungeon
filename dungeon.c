@@ -14,6 +14,7 @@ struct Room
     char content[SIZE_CONTENT]; 
 };
 void adventure();
+void getInput();
 int main()
 {
 	adventure();
@@ -27,13 +28,7 @@ void adventure()
 	fgets(prompArr, sizeof(prompArr), stdin);
 	int k = 0;
 	char temp[15];
-	while(prompArr[k] != ' ')
-	{
-		temp[k] = prompArr[k];
-		k++; 
-	}      
-	temp[k] = '\0';
-	
+	getInput(temp);	
 	if (strcmp(temp, "loaddungeon") == 0)
 	{
 		char textFile[10]; 
